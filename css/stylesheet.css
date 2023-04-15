@@ -4,34 +4,124 @@
     box-sizing: border-box;
     /* border: solid; */
 }
+
+/*Nav bar---------------------------------------------------*/
 nav{
     width: 100%;
     text-align: center;
     height: auto;
+    background-color: black;
 }
 
 nav li{
     display: inline-block;
-    width: 15%;
+    width: 13%;
     text-align: center;
     padding: 0.5em 0.3em;
     margin: 1em auto;
+    border: solid;
+    background-color:aliceblue ;
+    color: black;
 }
 
-header{
-    width: auto;
+nav li.current{
+    border: solid blue;
+}
+/*website wide styles----------------------------------------*/
+
+
+/*Home page-------------------------------------------------*/
+
+.homePage main{
+    display: flex;
+    height: 34em;
+    justify-content: center;
+    align-items: center;
 }
 
-h1{
+.homePage h1{
     text-align: center;
 }
 
-div{
-   height: auto;
+.homePage main{
+    background-color: grey;
 }
 
-p{
+.homePage main div{
+   height: auto;
+   background-color: white;
+}
+
+.homePage p{
     margin: 1em auto;
     width: 60%;
     padding: 1em;
 }
+
+
+/*CV page -----------------------------------------------------*/
+
+#cv{
+    width: 50%;
+    height: 900px;
+    margin-top: 2em;
+    
+}
+
+.cvPage main{
+    display: flex;
+    justify-content: center;
+}
+
+#cv object{
+    width: 100%;
+}
+
+/*Projects page-------------------------------------------------*/
+
+.projectsPage header{
+    text-align: center;
+}
+
+.projectsPage header h1{
+    margin-top: 1em;
+}
+
+.projectsPage main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.projectsPage main div.project{
+    height: auto;
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: red  solid;
+
+}
+
+.projectsPage main div .projectTitle{
+    display: flex;
+    width: 100%;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsPage main div h3{
+  margin-right: 1em;
+}
+
+.projectsPage main div .projectContent{
+    display: none;
+    width: 100%;
+    height: 120px;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+}
+
